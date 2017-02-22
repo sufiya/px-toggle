@@ -30,14 +30,15 @@
 @import "px-flexbox-design/_base.flexbox.scss";
 @import "px-viewport-design/_base.viewport.scss";
 
-
-
-
-
-
 // Meta
 
 // Objects
+
+$inuit-enable-toggle--small : true;
+$inuit-enable-toggle--large : true;
+$inuit-enable-toggle--huge  : true;
+
+@import "px-toggle-design/_objects.toggle.scss";
 
 // Component
 
