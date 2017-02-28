@@ -5,6 +5,9 @@
     /* Name for the component */
     get is() { return 'px-toggle'; }
 
+    /* Behaviors to import for this component */
+    get behaviors() { return [Polymer.IronCheckedElementBehavior]; }
+
     /* Properties for this component */
     get properties() {
       return {
@@ -22,16 +25,10 @@
       };
     }
 
-    attached() {
-      // this.addEventListener("tap", (evt)=>this._onToggleTap(evt));
-    }
-
-    detached() {
-    }
-
-    _onToggleTap(evt){
-      // console.log(this.$.simpleToggle.checked);
-      // this.$.simpleToggle.checked != this.$.simpleToggle.checked;
+    get listeners() {
+     return {
+       'tap': '_onCheckTap'
+     };
     }
 
     _checkLabelSize(size){
@@ -40,11 +37,9 @@
 
     _checkInputSize(size){
       return `toggle__input--${size}`;
-
     }
-
-    clickMe(){
-      this.$.simpleToggle.blur();
+    _onCheckTap(evt) {
+      this.checked = !this.checked;
     }
   }
 
