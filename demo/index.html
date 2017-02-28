@@ -37,7 +37,8 @@
       <!-- Component ---------------------------------------------------------->
       <px-demo-component>
         <px-toggle
-          counter-value="{{props.counterValue.value}}">
+          checked="{{props.checked.value}}"
+          size="{{props.size.value}}">
         </px-toggle>
       </px-demo-component>
       <!-- END Component ------------------------------------------------------>
@@ -198,10 +199,16 @@
      * A reference for `this.props`. Read the documentation there.
      */
     demoProps: {
-      counterValue: {
-        type: Number,
-        defaultValue: '0',
-        inputType: 'text'
+      checked: {
+        type: Boolean,
+        defaultValue: false,
+        inputType: 'toggle'
+      },
+      size: {
+        type: String,
+        defaultValue: '',
+        inputType: 'dropdown',
+        inputChoices: ['small', 'large', 'huge']
       }
     }
   });
