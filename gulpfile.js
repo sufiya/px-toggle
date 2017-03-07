@@ -76,13 +76,14 @@ gulp.task('transpile', function() {
     })
     .pipe(rename(path => {
       path.basename = path.basename.replace('.es6', '');
-      console.log(`Transpiling ${path.basename}.es6.js -> dist/${path.basename}.js`)
+      console.log(`Transpiling ${path.basename}.es6.js -> dist/${path.basename}.js`);
     }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(ES5_DEST));
 });
 
 gulp.task('watch', function() {
+  gulp.watch(ES6_SRC, ['transpile']);
   gulp.watch(['sass/*.scss'], ['sass']);
 });
 

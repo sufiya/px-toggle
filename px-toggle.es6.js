@@ -2,11 +2,22 @@
   'use strict';
 
   class PxToggle {
-    /* Name for the component */
-    get is() { return 'px-toggle'; }
+    beforeRegister() {
+      this.is = 'px-toggle';
+      this.properties = this.properties || {};
+    }
 
-    /* Behaviors to import for this component */
-    get behaviors() { return [Polymer.IronCheckedElementBehavior]; }
+    get behaviors() {
+      return this._behaviors || (this._behaviors = [Polymer.IronCheckedElementBehavior]);
+    }
+
+    set behaviors(value) {
+      this._behaviors = value;
+    }
+
+    set properties(value) {
+      this._properties = value;
+    }
 
     /* Properties for this component */
     get properties() {

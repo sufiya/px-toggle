@@ -1,27 +1,29 @@
 // This is the wrapper for custom tests, called upon web components ready state
 function runCustomTests() {
-  // Place any setup steps like variable declaration and initialization here
 
-  // This is the placeholder suite to place custom tests in
-  // Use testCase(options) for a more convenient setup of the test cases
-  suite('Custom Automation Tests for px-toggle', function() {
-    test('Check initial value of counter', function(done){
-      var counterEl = Polymer.dom(document).querySelector('px-toggle'),
-          counterValueEl = Polymer.dom(counterEl.root).querySelector('span');
-      assert.equal(counterValueEl.textContent, '0');
-      done();
+  describe('px-toggle', function () {
+
+    it('should be unchecked by default', function() {
+      var toggleElement = fixture('PxToggleFixture');
+      assert.isFalse(toggleElement.checked);
     });
 
-    test('Clicking px-toggle increments the counter', function(done){
-      var counterEl = Polymer.dom(document).querySelector('px-toggle'),
-          counterValueEl = Polymer.dom(counterEl.root).querySelector('span');
-      assert.equal(counterValueEl.textContent, '0');
+    it('can be checked by setting property', function() {
+      var toggleElement = fixture('PxToggleFixture');
+      assert.isFalse(toggleElement.checked);
+      toggleElement.checked = true;
+      assert.isTrue(toggleElement.checked);
+    });
 
-      counterEl.click();
-      flush(function(){
-        assert.equal(counterValueEl.textContent, '1');
-      });
-      done();
+    it('is checked when attribute is checked', function() {
+      var toggleElement = fixture('CheckedAttributeFeature');
+      assert.isTrue(toggleElement.checked);
+    });
+
+    it('is unchecked when attribute is set false', function() {
+      var toggleElement = fixture('CheckedAttributeFeature');
+      toggleElement.checked = false;
+      assert.isFalse(toggleElement.checked);
     });
   });
 }

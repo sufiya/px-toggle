@@ -3,11 +3,11 @@
     siblings. When this component is run from its own repo (e.g. tests, examples), we assume the server is started with
     'gulp serve' (or similar server setup) to enable correct finding of bower dependencies for local runs.
 -->
-<link async rel="import" href="../polymer/polymer.html"/>
-<link async rel="import" href="../iron-label/iron-label.html"/>
-<link defer rel="import" href="../iron-checked-element-behavior/iron-checked-element-behavior.html">
+<link rel="import" href="../polymer/polymer.html"/>
+<link rel="import" href="../iron-label/iron-label.html"/>
+<link rel="import" href="../iron-checked-element-behavior/iron-checked-element-behavior.html">
 
-<link defer rel="import" href="css/px-toggle-styles.html">
+<link rel="import" href="css/px-toggle-styles.html">
 
 <!--
 REPLACE THIS TEXT WITH A COMPONENT DESCRIPTION
@@ -25,7 +25,7 @@ REPLACE THIS TEXT WITH A COMPONENT DESCRIPTION
 <dom-module id="px-toggle">
   <template>
     <style include="px-toggle-styles"></style>
-    <input type="checkbox" checked={{checked}} id="checkbox" class$="toggle__input {{_checkInputSize(size)}}">
+    <input type="checkbox" checked=[[checked]] id="checkbox" class$="toggle__input {{_checkInputSize(size)}}">
     <iron-label for="checkbox" class$="toggle__label {{_checkLabelSize(size)}}"></iron-label>
   </template>
 </dom-module>

@@ -5,7 +5,7 @@ var px_toggle_1;
 // This is the bootstrapping function that will run the base and custom tests
 // upon the completion of web components construction by Polymer
 document.addEventListener("WebComponentsReady", function() {
-  runBaseTests();
+  // runBaseTests();
   runCustomTests();
 });
 
