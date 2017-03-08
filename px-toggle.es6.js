@@ -23,15 +23,18 @@
     get properties() {
       return {
         /**
-         * The zoom level of the active map. Can be used to set or update
-         * the zoom level of the map, or read from after the user changes the
-         * map zoom level to an updated value.
-         *
-         * @type {Number}
+         * The size of the toggle element. Can be one of
+         * small, regular (default), large & huge.
+         * @type {String}
          */
         size: {
           type: String,
-          value: "small"
+          value: ""
+        },
+        disabled: {
+          type: Boolean,
+          value: false,
+          reflectToAttribute: true
         }
       };
     }
@@ -40,6 +43,10 @@
      return {
        'tap': '_onCheckTap'
      };
+    }
+
+    _checkDisabledState(disabled){
+      return `${(disabled ? 'toggle--disabled' : '')}`;
     }
 
     _checkLabelSize(size){

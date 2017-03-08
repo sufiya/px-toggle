@@ -26,7 +26,7 @@ REPLACE THIS TEXT WITH A COMPONENT DESCRIPTION
   <template>
     <style include="px-toggle-styles"></style>
     <input type="checkbox" checked=[[checked]] id="checkbox" class$="toggle__input {{_checkInputSize(size)}}">
-    <iron-label for="checkbox" class$="toggle__label {{_checkLabelSize(size)}}"></iron-label>
+    <iron-label for="checkbox" class$="toggle__label {{_checkLabelSize(size)}} {{_checkDisabledState(disabled)}}"></iron-label>
   </template>
 </dom-module>
 <script src="dist/px-toggle.js"></script>

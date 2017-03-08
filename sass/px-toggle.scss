@@ -27,9 +27,10 @@
 
 // Objects
 
-$inuit-enable-toggle--small : true;
-$inuit-enable-toggle--large : true;
-$inuit-enable-toggle--huge  : true;
+$inuit-enable-toggle--small     : true;
+$inuit-enable-toggle--large     : true;
+$inuit-enable-toggle--huge      : true;
+$inuit-enable-toggle--disabled  : true;
 
 @import "px-toggle-design/_objects.toggle.scss";
 
