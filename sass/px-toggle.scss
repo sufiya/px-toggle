@@ -44,5 +44,9 @@ iron-label{
   pointer-events: none;
 }
 
+:host([disabled]) {
+  pointer-events: none;
+}
+
 // Trumps
 @import "inuit-clearfix/_trumps.clearfix.scss";

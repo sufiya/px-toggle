@@ -31,6 +31,12 @@
           type: String,
           value: ""
         },
+
+        /**
+         * The disabled state attribute for the component.
+         * @type {Boolean}
+         * @default false
+         */
         disabled: {
           type: Boolean,
           value: false,
