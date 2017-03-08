@@ -38,7 +38,8 @@
       <px-demo-component>
         <px-toggle
           checked="{{props.checked.value}}"
-          size="{{props.size.value}}">
+          size="{{props.size.value}}"
+          disabled="{{props.disabled.value}}">
         </px-toggle>
       </px-demo-component>
       <!-- END Component ------------------------------------------------------>
@@ -206,9 +207,14 @@
       },
       size: {
         type: String,
-        defaultValue: '',
+        defaultValue: 'regular (default)',
         inputType: 'dropdown',
-        inputChoices: ['small', 'large', 'huge']
+        inputChoices: ['regular (default)', 'small', 'large', 'huge']
+      },
+      disabled: {
+        type: Boolean,
+        defaultValue: false,
+        inputType: 'toggle'
       }
     }
   });
