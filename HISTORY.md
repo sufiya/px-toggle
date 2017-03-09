@@ -1,3 +1,7 @@
+v0.0.3
+==================
+* Cleanup bower ignore
+
 v0.0.2
 ==================
 * CI/CD integration
