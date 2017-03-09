@@ -23,7 +23,7 @@
     <!-- Header -->
     <px-demo-header
         module-name="px-toggle"
-        description="The px-toggle component is...">
+        description="Toggle is a simple on/off switch web component. Use it to create simple UI elements that enable and disable things.">
     </px-demo-header>
 
     <!-- Interactive -->
@@ -200,16 +200,16 @@
      * A reference for `this.props`. Read the documentation there.
      */
     demoProps: {
-      checked: {
-        type: Boolean,
-        defaultValue: false,
-        inputType: 'toggle'
-      },
       size: {
         type: String,
         defaultValue: 'regular (default)',
         inputType: 'dropdown',
         inputChoices: ['regular (default)', 'small', 'large', 'huge']
+      },
+      checked: {
+        type: Boolean,
+        defaultValue: false,
+        inputType: 'toggle'
       },
       disabled: {
         type: Boolean,
