@@ -1,0 +1,52 @@
+/*
+ * Copyright (c) 2014 GE Global Research. All rights reserved.
+ *
+ * The copyright to the computer software herein is the property of
+ * GE Global Research. The software may be used and/or copied only
+ * with the written permission of GE Global Research or in accordance
+ * with the terms and conditions stipulated in the agreement/contract
+ * under which the software has been supplied.
+ */
+
+//
+// Sass for the for the px-toggle component
+//
+// @author
+//
+
+// Settings
+
+// Tools
+
+// Generic
+@import "px-box-sizing-design/_generic.box-sizing.scss";
+
+// Base
+
+// Meta
+
+// Objects
+
+$inuit-enable-toggle--small     : true;
+$inuit-enable-toggle--large     : true;
+$inuit-enable-toggle--huge      : true;
+$inuit-enable-toggle--disabled  : true;
+
+@import "px-toggle-design/_objects.toggle.scss";
+
+// Component
+
+:host {
+  display: inline-block;
+  cursor: pointer;
+}
+iron-label{
+  pointer-events: none;
+}
+
+:host([disabled]) {
+  pointer-events: none;
+}
+
+// Trumps
+@import "inuit-clearfix/_trumps.clearfix.scss";

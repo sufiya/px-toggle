@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+temp
+bower_components
+.idea
+reports
+.yo-rc.json
+.github
+monogram-wdmk.png
