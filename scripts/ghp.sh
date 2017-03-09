@@ -64,3 +64,7 @@ chmod 0400 $TRAVIS_BUILD_DIR/deploy_key
 ssh-add $TRAVIS_BUILD_DIR/deploy_key
 #Now that we're all set up, we can push.
 git push $SSH_REPO $TARGET_BRANCH
+
+sleep 120s
+
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${cloudflare_zone_identifier}/purge_cache" -H "X-Auth-Email: martin.wragg@ge.com" -H "X-Auth-Key: ${cloudflare}" -H "Content-Type: application/json" --data '{"purge_everything":true}'

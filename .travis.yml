@@ -1,4 +1,4 @@
-sudo: required
+sudo: false
 dist: trusty
 language: node_js
 node_js:
@@ -22,13 +22,12 @@ script:
 - xvfb-run wct --skip-plugin sauce
 - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct --plugin sauce --skip-plugin
   local; fi
+env:
+  global:
+    secure: RktkA2ME9y7na9jvpDNiJh0mGyJdqIGJP5M14yVLvqJaFxhD4fQNOO5jt1Y9lON0ZbkGcvQPDdqPC8QZJ0QhzERGDelMH8vm8r2UJEhVLypycbmv6ax8eKLARauLu5rMWRjqQYiF6pEiOoX6ZpObMn1l/N3r40iLSjtY1+OYaGm+6oFjh3NYDf2nkACdc+LTPNlhRyEXpRe9PbmEKeRLRTx1XMC9vUWLcSFSBfYrKcSLyxfux1Me0tVmI/erdJX8fVocPquGEvpt9/BuL5PSlugIPfFGO7U6WI7Nj7H3X6j76wAQPYdYdqELDZHXSHP/SE4wGv6HZkwnRhTpLnURFcHqolbOKocUajJjvwZLfqFhmVWH6Mgh/1MEDHklBdfOIr0ZneSf3daPHNAbPtVkdaNnu5RjxbBqtgkKyp/fG8ZRQ5Tkux0SPDdOQKcNWpt5I5yGfQSaiXto3cr6x7EHzrAvlDLewGoI3+8GrD/f/bbpMU+oR5Y52Rqoa9UQJEWlVFhW2QP5Sr3QbyBEB1iRuUbZoIpgE20NaPcjcZXiqivwABRzi3a0Dtx4yGvrRGfM8et2er/An/I2iM2Hengxjnt3qOI9zj//J99D3dqh6+tErfiBlTDqomAfHYq/Lv0Rwn/3STGv7A7KteXiAGuXqGaT1wKaDhf92cC0zacWMm4=
 before_install:
-- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k "$password"
-  -in id_rsa.enc -out deploy_key -d; fi
+  - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k "$password" -in id_rsa.enc -out deploy_key -d; fi
 after_success:
 - cd $TRAVIS_BUILD_DIR/scripts
 - chmod 755 ghp.sh
-- ./ghp.sh
-env:
-  global:
-    secure: fRhgm4b/e63r4fZyqRNG0xbuAg99+qbPoHnjVERnsB5e+RNBs7fvVEXZHfRofkzQwlJlIqCUCjRKHdYNJqBjr4Krx5wsSGLJ6yJN6QotLxUBXufb8hsvVxzsfck86EHbRLCaAnevwUi7tqVIigrzQzeI+pgwQQLY6eJ6ovci4++6iZkTHMzQaJsU9rm3ToWavW0LY2whP2UAz1wIdwmbQF+SeoZiGNj1PSapM6mI6tW/3XU2RMYEgc8vRd8qgTWnQJVq9a7JsnkMWMtBIP2NbCIEypgZmmWgzySqXz/nLalocok/oitjW7TIb1OptDFs2j07dyUvG00HR/NvAAWy4w5ptWl9/R6ysPxUB57MYhJl3J93zdjZj9Ymtf80jivC/chXSGLb+jE8OAPArRu+6NZFwXY0x46cZa2jo4/oJ2rfZHOwchsR1bfY+e/HYm2P7+nFxhOH9Nz6mvF6A0kExsy1IHQ+UREMFVAI74b7zh/VMzZH+IXvqi8vNZ69ThysCsQuZ7sxbMpujR02Dur2jPXNWyPMb/nDP+O+7E5/1dQGLvwok5QzApwyKru4qJBFDFVBheqB3nW/Vmevf11Kfn+0srj22ZrARQHlEfA2qMl8KcXWiCnyYxhL06dkcD4F9aUIq9kdLpvXBmvHqGmfG1MxeF13r1vCoTr6ypQduA4=
+- "./ghp.sh"
