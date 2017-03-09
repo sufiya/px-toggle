@@ -1,6 +1,6 @@
 {
   "name": "px-toggle",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": [
     "px-toggle.html"
   ],
@@ -21,7 +21,8 @@
     "HISTORY.md",
     "README.md",
     ".jshintrc",
-    ".editorconfig"
+    ".editorconfig",
+    "*.enc"
   ],
   "dependencies": {
     "polymer": "^1.8.1",

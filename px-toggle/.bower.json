@@ -1,6 +1,6 @@
 {
   "name": "px-toggle",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": [
     "px-toggle.html"
   ],
@@ -21,7 +21,8 @@
     "HISTORY.md",
     "README.md",
     ".jshintrc",
-    ".editorconfig"
+    ".editorconfig",
+    "*.enc"
   ],
   "dependencies": {
     "polymer": "^1.8.1",
@@ -35,14 +36,14 @@
     "px-demo": "^1.4.14"
   },
   "homepage": "https://github.com/predixDev/px-toggle",
-  "_release": "0.0.2",
+  "_release": "0.0.3",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.2",
-    "commit": "83ed0127fc5361812f1bbc3975f1db3bd1a973d5"
+    "tag": "v0.0.3",
+    "commit": "3249d25e64285ea1d6d9cb26358b51daa3d99340"
   },
   "_source": "https://github.com/predixDev/px-toggle.git",
-  "_target": "^0.0.2",
+  "_target": "^0.0.3",
   "_originalSource": "px-toggle",
   "_direct": true
 }
