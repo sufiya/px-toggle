@@ -1,3 +1,7 @@
+v0.0.5
+==================
+* Update travis deploy scripts
+
 v0.0.4
 ==================
 * More deployment fixes
