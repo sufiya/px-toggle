@@ -1,3 +1,7 @@
+v0.0.4
+==================
+* More deployment fixes
+
 v0.0.3
 ==================
 * Cleanup bower ignore
