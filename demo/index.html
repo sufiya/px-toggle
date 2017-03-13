@@ -38,7 +38,7 @@
       <px-demo-component>
         <px-toggle
           checked="{{props.checked.value}}"
-          size="[[_returnSizeValue(props.size.selectedKey)]]"
+          size="{{props.size.value}}"
           disabled="{{props.disabled.value}}">
         </px-toggle>
       </px-demo-component>
@@ -204,8 +204,7 @@
         type: String,
         defaultValue: 'regular (default)',
         inputType: 'dropdown',
-        // inputChoices: ['regular (default)', 'small', 'large', 'huge']
-        inputChoices: [{"key":"DD_regular", "val":"regular (default)"}, {"key":"DD_small", "val": "small"}, {"key":"DD_large", "val": "large"}, {"key":"DD_huge", "val": "huge"}]
+        inputChoices: ['regular (default)', 'small', 'large', 'huge']
       },
       checked: {
         type: Boolean,
@@ -217,10 +216,6 @@
         defaultValue: false,
         inputType: 'toggle'
       }
-    },
-    _returnSizeValue: function(val){
-      debugger;
-      console.log(val);
     }
   });
 </script>
