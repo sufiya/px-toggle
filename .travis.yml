@@ -27,7 +27,7 @@ after_success:
   -in deploy.enc -out deploy_key -d; fi
 - cd $TRAVIS_BUILD_DIR/scripts
 - chmod 755 ghp.sh
-- "./ghp.sh"
+- ./ghp.sh
 env:
   global:
   - secure: g4Chum5Zyjmz8wJrQ0WOj7fEnDePeejTXQBsDBOcvNQ2McUfmrDyjd57YunrGc3PwhYf2Gsy17bcDGcSH7a/Na9w6K2Fw5+Ptuni0pMju4O+Invq9ulnrhiw0guwgiMJize7z+AKD/e2EO/VllNA0cHNyiLdaCLV09JB1Yw5qEkjKWhbzBca833qa57POfNM0BONBsNVgptn3pdnyxMLBSMpNeXGhMb6oLzsfXoqPJhOk1fdC7KIUBqVJZXyeWYLtEWw6i1YnYJpHkKZkSt8qwExkuJJuN0kFWbHHFN5p+uPQkwIptxHbAy1bIOARjx7RaXDNKMZAInXTw1yH6oIyrvU4zBM/lhG/+jgv0OZVzAE/Aewhyz8WLNmilL1UkC/ixuduvhEfdvuUm7PQgB1Rgj3hqUvZA99SIo4GXIy/2Ks2r+4vq3oaXrHilvIpKQTbt1tdZe4SV17qUVKx8kzRRkS8sFiKeKbdR8OH6PI1HiSXc6iJUd9oXjx55VyqZfaMcyYeHPthouyJmoyN+UzkhnAccFmtjYxtc+NtyUZMdQRMPceyww4YFZalcBrKqUVJas0mXZtfbkpKw1J7mdQJYxdEHL6nX1+xQbgSS404EuPeWAnR/A/00BN91xo63CqLOAE3CNNUVBDdHhkH99v2gSJmjoyzwQakX3qy/Lxb2w=
