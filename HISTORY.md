@@ -1,3 +1,7 @@
+v1.0.1
+==================
+* Checkin of transpiled code failed, re-adding
+
 v1.0.0
 ==================
 * Move back to using Polymer constructor so Hydrolysis can analyse component
