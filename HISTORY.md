@@ -1,3 +1,8 @@
+v1.0.0
+==================
+* Move back to using Polymer constructor so Hydrolysis can analyse component
+* Ready for release, push to 1.0.0
+
 v0.0.5
 ==================
 * Update travis deploy scripts
