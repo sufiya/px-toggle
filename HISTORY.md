@@ -1,3 +1,7 @@
+v1.0.2
+==================
+* accessibility improvements
+
 v1.0.1
 ==================
 * Checkin of transpiled code failed, re-adding

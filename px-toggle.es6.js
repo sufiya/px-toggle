@@ -32,7 +32,12 @@
         'tap': '_onCheckTap'
       },
 
+      attached() {
+        this.setAttribute('role','switch');
+      },
+
       _checkDisabledState(disabled){
+        this.setAttribute('aria-disabled',disabled);
         return `${(disabled ? 'toggle--disabled' : '')}`;
       },
 
