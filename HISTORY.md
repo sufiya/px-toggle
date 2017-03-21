@@ -1,3 +1,7 @@
+v1.0.3
+==================
+* update component description (#1)
+
 v1.0.2
 ==================
 * accessibility improvements
