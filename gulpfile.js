@@ -42,6 +42,7 @@ function buildCSS(){
     $.autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false,
+      flexbox: false,
       flexbox: false
     }),
     gulpif(!argv.debug, $.cssmin())
