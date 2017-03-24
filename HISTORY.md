@@ -1,3 +1,7 @@
+v1.0.4
+==================
+* add dark theme (#2)
+
 v1.0.3
 ==================
 * update component description (#1)
