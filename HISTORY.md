@@ -1,3 +1,7 @@
+v1.0.5
+==================
+* get updates from px-toggle-design
+
 v1.0.4
 ==================
 * add dark theme (#2)
