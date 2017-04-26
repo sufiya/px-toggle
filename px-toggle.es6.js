@@ -49,6 +49,7 @@
         return `toggle__input--${size}`;
       },
       _onCheckTap(evt) {
+        console.log(evt);
         this.checked = !this.checked;
       }
     });
