@@ -40,7 +40,8 @@ $inuit-enable-toggle--disabled  : true;
   display: inline-block;
   cursor: pointer;
 }
-iron-label{
+
+.toggle__label{
   pointer-events: none;
 }
 
