@@ -1,3 +1,8 @@
+v2.0.0
+==================
+* major bump for component redesign
+* enabled pointer events for hover effect, replaced with debounce
+
 v1.0.5
 ==================
 * get updates from px-toggle-design

@@ -41,12 +41,8 @@ $inuit-enable-toggle--disabled  : true;
   cursor: pointer;
 }
 
-.toggle__label{
-  pointer-events: none;
-}
-
 :host([disabled]) {
-  pointer-events: none;
+  cursor: not-allowed;
 }
 
 // Trumps
