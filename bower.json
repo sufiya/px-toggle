@@ -27,8 +27,8 @@
   "dependencies": {
     "polymer": "^1.9.0",
     "px-theme": "^3.0.0",
-    "iron-label": "^1.0.2",
-    "iron-checked-element-behavior": "^1.0.5"
+    "iron-label": "^2.0.0",
+    "iron-checked-element-behavior": "^2.0.0"
   },
   "devDependencies": {
     "px-toggle-design": "^2.0.0",
