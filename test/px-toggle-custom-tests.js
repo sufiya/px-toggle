@@ -76,13 +76,13 @@ function runCustomTests() {
       expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(30, 1);
     });
 
-    it('is about 20px height when "large" size', function() {
+    it('is about 40px height when "large" size', function() {
       var toggleElement = fixture('PxToggleFixture');
       toggleElement.size = 'large';
       expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(40, 1);
     });
 
-    it('is about 20px height when "huge" size', function() {
+    it('is about 60px height when "huge" size', function() {
       var toggleElement = fixture('PxToggleFixture');
       toggleElement.size = 'huge';
       expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(60, 1);
