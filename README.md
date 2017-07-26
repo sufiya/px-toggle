@@ -1,8 +1,8 @@
-#px-toggle
+# px-toggle [![Build Status](https://travis-ci.org/PredixDev/px-toggle.svg?branch=master)](https://travis-ci.org/PredixDev/px-toggle)
 
 ## Overview
 
-px-toggle is a Predix UI component
+`Px-toggle` is a Predix UI component that provides a simple on/off switch. Use it to create UI elements that enable and disable things.
 
 ## Usage
 
@@ -12,17 +12,17 @@ px-toggle is a Predix UI component
 3. bower
 4. [webcomponents-lite.js polyfill](https://github.com/webcomponents/webcomponentsjs)
 
-Node, npm and bower are necessary to install the component and dependencies. webcomponents.js adds support for web components and custom elements to your application.
+Node, npm, and bower are necessary to install the component and dependencies. webcomponents.js adds support for web components and custom elements to your application.
 
 ## Getting Started
 
-First, install the component via bower on the command line.
+First, install the component via bower on the command line:
 
 ```
 bower install px-toggle --save
 ```
 
-Second, import the component to your application with the following tag in your head.
+Second, import the component in your application with the following tag in your head:
 
 ```
 <link rel="import" href="/bower_components/px-toggle/px-toggle.html"/>
