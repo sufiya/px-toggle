@@ -48,6 +48,7 @@
       _checkInputSize(size){
         return `toggle__input--${size}`;
       },
+
       _onCheckTap(evt) {
         if(!this.disabled) {
           this.debounce('checkChanged', function() {

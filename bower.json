@@ -1,6 +1,6 @@
 {
   "name": "px-toggle",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": [
     "px-toggle.html"
   ],
@@ -32,10 +32,11 @@
   },
   "devDependencies": {
     "px-toggle-design": "^2.0.0",
-    "px-starter-kit-design": "^1.0.0",
+    "px-box-sizing-design": "^1.0.2",
+    "px-normalize-design": "^1.0.2",
     "px-demo": "^2.0.0"
   },
-   "resolutions": {
+  "resolutions": {
     "webcomponentsjs": "^0.7.24"
   }
 }
