@@ -1,3 +1,7 @@
+v2.0.3
+==================
+* bind disabled to prevent keyboard toggling
+
 v2.0.2
 ==================
 * removed starter kit from bower
