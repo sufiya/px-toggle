@@ -1,6 +1,3 @@
-// This is the wrapper for custom tests, called upon web components ready state
-function runCustomTests() {
-
   describe('px-toggle checked behaviour', function () {
     it('should be unchecked by default', function() {
       var toggleElement = fixture('PxToggleFixture');
@@ -88,4 +85,3 @@ function runCustomTests() {
       expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(60, 1);
     });
   });
-}
