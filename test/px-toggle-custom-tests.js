@@ -65,23 +65,23 @@
     it('is about 20px height when "small" size', function() {
       var toggleElement = fixture('PxToggleFixture');
       toggleElement.size = 'small';
-      expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(20, 1);
+      expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(10, 1);
     });
 
     it('is about 30px height when "normal" size', function() {
       var toggleElement = fixture('PxToggleFixture');
-      expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(30, 1);
+      expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(15, 1);
     });
 
     it('is about 40px height when "large" size', function() {
       var toggleElement = fixture('PxToggleFixture');
       toggleElement.size = 'large';
-      expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(40, 1);
+      expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(20, 1);
     });
 
     it('is about 60px height when "huge" size', function() {
       var toggleElement = fixture('PxToggleFixture');
       toggleElement.size = 'huge';
-      expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(60, 1);
+      expect(toggleElement.getBoundingClientRect().height).to.be.closeTo(30, 1);
     });
   });
