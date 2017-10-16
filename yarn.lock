@@ -7163,11 +7163,9 @@ ternary-stream@^2.0.1:
     merge-stream "^1.0.0"
     through2 "^2.0.1"
 
-"test-fixture@github:polymerelements/test-fixture":
+test-fixture@PolymerElements/test-fixture:
   version "3.0.0-rc.1"
-  resolved "https://codeload.github.com/polymerelements/test-fixture/tar.gz/eb86ce25c850bb20523d47a55d07235f0fad5858"
-  dependencies:
-    web-component-tester "^6.0.0-prerelease.5"
+  resolved "https://codeload.github.com/PolymerElements/test-fixture/tar.gz/05caebd9ecbb464024455923bd351d2ba640932e"
 
 test-value@^1.1.0:
   version "1.1.0"

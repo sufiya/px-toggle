@@ -24,7 +24,7 @@
 <dom-module id="px-toggle">
   <template>
     <style include="px-toggle-styles"></style>
-    <input type="checkbox" checked=[[checked]] aria-checked=[[checked]] id="checkbox" class$="toggle__input {{_checkInputSize(size)}}">
+    <input type="checkbox" checked=[[checked]] aria-checked=[[checked]] id="checkbox" disabled$="{{disabled}}" class$="toggle__input {{_checkInputSize(size)}}">
     <iron-label for="checkbox" class$="toggle__label {{_checkLabelSize(size)}} {{_checkDisabledState(disabled)}}"></iron-label>
   </template>
 </dom-module>
