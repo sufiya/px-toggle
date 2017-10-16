@@ -17,7 +17,7 @@ before_script:
 - yarn add polymer-cli
 - yarn add bower
 - export PATH=$PWD/node_modules/.bin:$PATH
-- bower install
+- polymer install --variants
 script:
 - xvfb-run wct --skip-plugin sauce
 - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct --plugin sauce --skip-plugin
