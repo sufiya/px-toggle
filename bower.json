@@ -37,13 +37,12 @@
     "px-normalize-design": "^1.0.2"
   },
   "resolutions": {
-    "webcomponentsjs": "^1.0.0",
-    "px-theme": "polymer2.0-preview"
+    "webcomponentsjs": "^1.0.0"
   },
   "variants": {
     "1.x": {
       "dependencies": {
-        "polymer": "Polymer/polymer#^1.9"
+        "polymer": "^1.9.0"
       },
       "devDependencies": {
         "web-component-tester": "^5.0.0"
