@@ -16,18 +16,18 @@
       assert.isTrue(toggleElement.checked);
     });
 
-    // it('input is checked in shadow root when host attribute is checked', function() {
-    //   var toggleElement = fixture('CheckedAttributeFeature');
-    //   var inputElement = Polymer.dom(toggleElement.root).querySelector('input');
-    //   assert.isTrue(inputElement.checked);
-    // });
-    //
-    // it('input is unchecked in shadow root when host attribute is removed', function() {
-    //   var toggleElement = fixture('CheckedAttributeFeature');
-    //   var inputElement = Polymer.dom(toggleElement.root).querySelector('input');
-    //   toggleElement.removeAttribute('checked');
-    //   assert.isFalse(inputElement.checked);
-    // });
+    it('input is checked in shadow root when host attribute is checked', function() {
+      var toggleElement = fixture('CheckedAttributeFeature');
+      var inputElement = Polymer.dom(toggleElement.root).querySelector('input');
+      assert.isTrue(inputElement.checked);
+    });
+
+    it('input is unchecked in shadow root when host attribute is removed', function() {
+      var toggleElement = fixture('CheckedAttributeFeature');
+      var inputElement = Polymer.dom(toggleElement.root).querySelector('input');
+      toggleElement.removeAttribute('checked');
+      assert.isFalse(inputElement.checked);
+    });
 
     it('is unchecked when checked property is set false', function() {
       var toggleElement = fixture('CheckedAttributeFeature');
