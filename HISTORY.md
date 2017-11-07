@@ -1,6 +1,11 @@
 v2.1.0
 ==================
-* hybrid polymer 1.x/2.x support.
+* hybrid polymer 1.x/2.x support
+
+v2.0.4
+==================
+
+* add device flags
 
 v2.0.3
 ==================
