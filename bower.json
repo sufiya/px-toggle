@@ -1,6 +1,6 @@
 {
   "name": "px-toggle",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "main": [
     "px-toggle.html"
   ],
@@ -35,7 +35,7 @@
     "px-box-sizing-design": "^1.0.2",
     "web-component-tester": "^6.3.0",
     "px-normalize-design": "^1.0.2",
-    "px-demo": "polymer2.0-preview"
+    "px-demo": "^3.0.0"
   },
   "resolutions": {
     "webcomponentsjs": "^1.0.0"
