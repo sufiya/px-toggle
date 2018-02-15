@@ -49,10 +49,18 @@
         return `toggle__input--${size}`;
       },
 
+      /**
+       * Event fired when the user changes the status of the toggle.
+       * `event.detail` will contain the new checked status (true or false)
+       *
+       * @event px-toggle-check-changed
+       */
+
       _onCheckTap(evt) {
         if(!this.disabled) {
           this.debounce('checkChanged', function() {
             this.checked = !this.checked;
+            this.fire('px-toggle-checked-changed', this.checked);
           },50);
         }
       }

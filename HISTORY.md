@@ -1,3 +1,7 @@
+v2.2.0
+==================
+* add px-toggle-checked-changed event (#7)
+
 v2.1.1
 ==================
 * Fix demo for IE
